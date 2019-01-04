@@ -1,0 +1,19 @@
+<tabset class="nav nav-tabs admin-tab" *ngIf="artistList"  role="tablist">
+  <tab class="dynamic-tab padding0"  *ngFor="let artist of artistList"  [heading]="artist.artistName"  [active]="artist.active"
+     (select)="artist.active = true;getSelectedArtist(artist);" (deselect)="artist.active = false">
+    <div *ngIf="selectedArtist" class="col-xs-12 col-md-6 pad-20 row">
+      <div class="col-md-12 art_block">
+        <span class="col-xs-6 col-md-3">Name:</span>
+        <span class="col-xs-6 col-md-6">{{selectedArtist.artistName}}</span>
+      </div>
+      <div class="col-md-12 art_block">
+        <span class="col-xs-6 col-md-3">Track Name:</span>
+        <span class="col-xs-6 col-md-6">{{selectedArtist.trackName}}</span>
+      </div>
+      <div class="col-md-12 art_block">
+        <span class="col-xs-6 col-md-3">Art work url 30:</span>
+        <span class="col-xs-6 col-md-6">{{selectedArtist.artworkUrl30}}</span>
+      </div>
+    </div>
+  </tab>
+</tabset>

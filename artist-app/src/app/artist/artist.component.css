@@ -1,0 +1,19 @@
+.container{
+    margin-top: 5%;
+    text-align:center;
+}
+.modal-body{
+    min-height: 150px;
+}
+.pad{
+    padding: 10px;
+}
+.error{
+    color: red;
+    position: fixed;
+    left: 40%;
+}
+
+/* .display-none{
+    display: none;
+} */

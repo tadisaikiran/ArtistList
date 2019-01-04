@@ -1,0 +1,10 @@
+    a.nav-link.active{
+        background-color: #5bc0de !important;
+    }
+
+    .art_block{
+        padding: 4px 0px;
+    }
+    .pad-20{
+        padding: 20px;
+    }
